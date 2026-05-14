@@ -1,0 +1,15 @@
+
+@theme "/usr/share/rofi/themes/gruvbox-dark-soft.rasi"
+
+/* Window Configuration (Size and Position) */
+window {
+    width:                        55%;     /* Width of the Rofi window (percentage or pixels like 600px) */
+    anchor:                       center;
+    location:                     center;
+    x-offset:                     0;
+    y-offset:                     0;
+    
+    border:                       2px;
+    border-radius:                5px;    /* Rounded corners */
+    padding:                      10px;
+}

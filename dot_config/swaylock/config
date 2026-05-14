@@ -1,0 +1,57 @@
+ignore-empty-password
+font=JetBrainsMono Nerd Font
+
+clock
+timestr=%R
+#datestr=%a, %e of %B
+
+screenshots
+
+fade-in=0.2
+
+effect-blur=20x6
+#effect-greyscale
+#effect-pixalate=5
+effect-scale=0.3
+
+indicator
+indicator-radius=200
+indicator-thickness=10
+indicator-caps-lock
+
+# Ring and Inside Elements (Shades of Base Blue)
+inside-color=1d455999
+inside-clear-color=3a739144
+inside-caps-lock-color=3a739144
+inside-ver-color=1d4559cc
+inside-wrong-color=8b3a4766
+
+ring-color=3a7391D9
+ring-clear-color=529cb8FF
+ring-caps-lock-color=529cb8FF
+ring-ver-color=529cb8FF
+ring-wrong-color=8b3a47FF
+
+# Border Lines
+line-color=00000000
+line-clear-color=529cb8FF
+line-caps-lock-color=3a7391FF
+line-ver-color=529cb8FF
+line-wrong-color=8b3a47FF
+
+# Typing Feedback (Ice Blue & Slate Variants)
+key-hl-color=529cb8FF
+bs-hl-color=8b3a47FF
+caps-lock-key-hl-color=529cb8FF
+caps-lock-bs-hl-color=8b3a47FF
+
+# Text Colors
+text-color=d9d8d8FF
+text-clear-color=529cb8FF
+text-ver-color=d9d8d8FF
+text-wrong-color=8b3a47FF
+text-caps-lock-color=3a7391FF
+
+# Layout adjustments
+separator-color=00000000
+disable-caps-lock-text

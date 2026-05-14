@@ -1,0 +1,12 @@
+[window]
+# 0.0 is invisible, 1.0 is solid. Try 0.8 for a nice look.
+opacity = 0.95
+padding = { x = 10, y = 10 }
+
+[font]
+size = 8.5
+
+[font.normal]
+family = "JetBrainsMono Nerd Font"
+style = "Regular"
+
