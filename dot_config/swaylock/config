@@ -5,14 +5,14 @@ clock
 timestr=%R
 #datestr=%a, %e of %B
 
-screenshots
+image=/home/delvo/Downloads/saberCool.jpg
 
 fade-in=0.2
 
-effect-blur=20x6
+#effect-blur=20x2
 #effect-greyscale
 #effect-pixalate=5
-effect-scale=0.3
+effect-scale=1
 
 indicator
 indicator-radius=200

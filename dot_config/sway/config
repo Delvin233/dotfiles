@@ -21,7 +21,7 @@ set $down j
 set $up k
 set $right l
 # Your preferred terminal emulator
-set $term alacritty
+set $term kitty
 # Your preferred application launcher
 set $menu rofi -show drun
 
@@ -55,21 +55,21 @@ bindsym XF86MonBrightnessDown exec swayosd-client --brightness lower
 
 ## wifi and bluetooth keybinds
 # Launch Wi-Fi TUI (Using a custom class)
-bindsym $mod+Control+w exec alacritty --class "float_tui" -e impala
+bindsym $mod+Control+w exec kitty --class "float_tui" -e impala
 
 # Launch Bluetooth TUI (Using the same custom class)
-bindsym $mod+Control+b exec alacritty --class "float_tui" -e bluetui
+bindsym $mod+Control+b exec kitty --class "float_tui" -e bluetui
 
 # Force ANY window with the class "float_tui" to be floating and centered
 for_window [app_id="float_tui"] floating enable, resize set 800 500, move position center
 
 # Using ncpamixer for volume
-bindsym $mod+Control+a exec alacritty --class "float_tui" -e ncpamixer
+bindsym $mod+Control+a exec kitty --class "float_tui" -e ncpamixer
 
 ### Output configuration
 #
 # Default wallpaper (more resolutions are available in /usr/share/backgrounds/sway/)
-output "*" bg /home/delvo/Downloads/baikenColorREd.jpg fill
+output "*" bg /home/delvo/Downloads/saberKing.jpg fill
 #
 # Example configuration:
 #
@@ -85,6 +85,7 @@ exec swayidle -w \
          timeout 300 'swaylock -f -c 000000' \
          timeout 600 'swaymsg "output * dpms off"' \
          resume 'swaymsg "output * dpms on"' \
+         timeout 900 'systemctl suspend' \
          before-sleep 'swaylock -f -c 000000'
 
 # system lock
@@ -208,7 +209,6 @@ bindsym $mod+Escape exec wlogout
 
     # Make the current focus fullscreen
     bindsym $mod+f fullscreen
-
     # Toggle the current focus between tiling and floating mode
     bindsym $mod+Shift+space floating toggle
 
@@ -286,6 +286,22 @@ bar {
         inactive_workspace #32323200 #32323200 #5c5c5c
     }
 }
+
+# Window gaps configuration
+gaps inner 2
+gaps outer 5
+smart_gaps off
+
+# Border style definition
+default_border pixel 2
+default_floating_border pixel 2
+
+# Vibrant Teal Neon palette
+# class                 border  backgr. text    indicator child_border
+client.focused          #26cedb #1d4559 #ffffff #26cedb   #26cedb
+client.focused_inactive #1d4559 #112936 #aaaaaa #1d4559   #1d4559
+client.unfocused        #112936 #112936 #888888 #112936   #112936
+client.urgent           #ff3366 #ff3366 #ffffff #ff3366   #ff3366
 
 exec lxqt-policykit-agent
 

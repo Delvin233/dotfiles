@@ -1,5 +1,5 @@
 
-@theme "/usr/share/rofi/themes/gruvbox-dark-soft.rasi"
+//@theme "/usr/share/rofi/themes/gruvbox-dark-soft.rasi"
 
 /* Window Configuration (Size and Position) */
 window {
@@ -13,3 +13,5 @@ window {
     border-radius:                5px;    /* Rounded corners */
     padding:                      10px;
 }
+
+@theme "/usr/share/rofi/themes/Monokai.rasi"
