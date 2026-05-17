@@ -25,6 +25,9 @@ set $term kitty
 # Your preferred application launcher
 set $menu rofi -show drun
 
+# Nightlight mode
+bindsym $mod+Ctrl+n exec pkill gammastep || gammastep -O 4200
+
 # Make mpv float and center it by default
 for_window [app_id="mpv"] floating enable, move position center, 
 
