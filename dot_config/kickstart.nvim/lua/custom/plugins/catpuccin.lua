@@ -4,8 +4,8 @@ return {
   priority = 1000,
   config = function()
     require('catppuccin').setup {
-      transparent_backgruond = false,
+      transparent_background = true,
     }
-    -- vim.cmd.colorscheme 'catppuccin-nvim'
+    vim.cmd.colorscheme 'catppuccin-mocha'
   end,
 }

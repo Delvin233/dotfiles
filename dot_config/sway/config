@@ -31,9 +31,13 @@ bindsym $mod+Ctrl+n exec pkill gammastep || gammastep -O 4200
 # Make mpv float and center it by default
 for_window [app_id="mpv"] floating enable, move position center, 
 
-# Float debug sessions and all file prompts, but KEEP the main engine tiled
-for_window [class="(?i)godot" title="^(?!.*Godot Engine).*$"] floating enable, move position center
-for_window [app_id="(?i)godot" title="^(?!.*Godot Engine).*$"] floating enable, move position center
+## the main idea is that sway runs from top to buttom, so after it does the float for everything,
+## it then diables float in the main editor so anything else follows the rules now.
+# 1. Float everything originating from Godot (Project Manager, Game Instance, Popups)
+for_window [class="(?i)godot"] floating enable
+
+# 2. Force ONLY the main editor window back into tiled mode
+for_window [class="(?i)godot" title=" - Godot Engine$"] floating disable
 
 # clipbaord configuration
 exec wl-paste --type text --watch cliphist store
@@ -72,7 +76,7 @@ bindsym $mod+Control+a exec kitty --class "float_tui" -e ncpamixer
 ### Output configuration
 #
 # Default wallpaper (more resolutions are available in /usr/share/backgrounds/sway/)
-output "*" bg /home/delvo/Downloads/saberKing.jpg fill
+output "*" bg /home/delvo/Downloads/rubberDuck.jpg fill
 #
 # Example configuration:
 #

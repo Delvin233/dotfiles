@@ -167,7 +167,7 @@
         // "format-linked": "{ifname} (No IP) ",
         "format-disconnected": "Disconnected ⚠",
         // "format-alt": "{ifname}: {ipaddr}/{cidr}",
-	"on-click": "alacritty -e impala"
+        "on-click": "kitty --class float_tui -e impala"
     },
     "pulseaudio": {
         // "scroll-step": 1, // %, can be a float
@@ -216,6 +216,6 @@
         "format": " {status}",
         "format-connected": " {device_alias}",
         "format-disabled": "", 
-        "on-click": "alacritty -e bluetui"
+        "on-click": "kitty --class float_tui -e bluetui"
     },
 }

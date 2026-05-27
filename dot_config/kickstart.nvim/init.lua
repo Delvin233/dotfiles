@@ -5,7 +5,7 @@ vim.g.maplocalleader = ' '
 vim.opt.guicursor = ''
 
 -- my personal color scheme setup
--- vim.cmd 'colorscheme quiet'
+-- vim.cmd 'colorscheme catppuccin-mocha'
 -- vim.api.nvim_set_hl(0, 'Normal', { bg = 'none' })
 -- vim.o.background = 'dark'
 -- vim.api.nvim_set_hl(0, 'SignColumn', { bg = 'none' })
@@ -582,7 +582,14 @@ require('lazy').setup({
       --  See `:help lsp-config` for information about keys and how to configure
       ---@type table<string, vim.lsp.Config>
       local servers = {
-        -- clangd = {},
+        clangd = {
+          cmd = {
+            "clangd",
+            "--background-index",
+            "--query-driver=/usr/bin/x86_64-w64-mingw32-*", 
+            "--header-insertion=never"
+          },
+        },
         -- gopls = {},
         -- pyright = {},
         -- rust_analyzer = {},
@@ -693,7 +700,9 @@ require('lazy').setup({
       -- You can also specify external formatters in here.
       formatters_by_ft = {
         lua = { 'stylua' },
-        typerscript = { 'biome' },
+        typescript = { 'biome' },
+        cpp = {'clang-format'},
+        c = {'clang-format'},
         -- rust = { 'rustfmt' },
         -- Conform can also run multiple formatters sequentially
         -- python = { "isort", "black" },
