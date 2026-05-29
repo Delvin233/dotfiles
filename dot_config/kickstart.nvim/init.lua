@@ -584,10 +584,10 @@ require('lazy').setup({
       local servers = {
         clangd = {
           cmd = {
-            "clangd",
-            "--background-index",
-            "--query-driver=/usr/bin/x86_64-w64-mingw32-*", 
-            "--header-insertion=never"
+            'clangd',
+            '--background-index',
+            '--query-driver=/usr/bin/x86_64-w64-mingw32-*',
+            '--header-insertion=never',
           },
         },
         -- gopls = {},
@@ -687,6 +687,12 @@ require('lazy').setup({
         local enabled_filetypes = {
           -- lua = true,
           -- python = true,
+          cpp = true,
+          c = true,
+          lua = true,
+          php = true,
+          json = true,
+          yaml = true,
         }
         if enabled_filetypes[vim.bo[bufnr].filetype] then
           return { timeout_ms = 500 }
@@ -700,9 +706,11 @@ require('lazy').setup({
       -- You can also specify external formatters in here.
       formatters_by_ft = {
         lua = { 'stylua' },
-        typescript = { 'biome' },
-        cpp = {'clang-format'},
-        c = {'clang-format'},
+        cpp = { 'clang_format' },
+        c = { 'clang_format' },
+        php = { 'php-cs-fixer' },
+        json = { 'clang_format' },
+        yaml = { 'yamlfmt' },
         -- rust = { 'rustfmt' },
         -- Conform can also run multiple formatters sequentially
         -- python = { "isort", "black" },
@@ -805,7 +813,6 @@ require('lazy').setup({
       signature = { enabled = true },
     },
   },
-
 
   --   -- change the command in the config to whatever the name of that colorscheme is.
   --   --
