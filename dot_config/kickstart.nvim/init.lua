@@ -16,7 +16,7 @@ vim.opt.guicursor = ''
 --
 -- Set to true if you have a Nerd Font installed and selected in the terminal
 
--- autobuilding c# files in Godot
+-- autobuilding c# files in Godot c#
 vim.api.nvim_create_autocmd('BufWritePost', {
   pattern = '*.cs',
   callback = function()
@@ -102,7 +102,7 @@ vim.o.timeoutlen = 500
 
 -- Configure how new splits should be opened
 vim.o.splitright = true
-vim.o.splitbelow = false
+vim.o.splitbelow = true
 
 -- Sets how neovim will display certain whitespace characters in the editor.
 --  See `:help 'list'`
