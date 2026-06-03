@@ -20,7 +20,7 @@
 	"BorderStyle": "Double",
 	"ShowPkgbuildCommand": "curl -s \"{url}\"|less",
 	"ShowPkgbuildInternally": true,
-	"ComputeRequiredBy": false,
+	"ComputeRequiredBy": true,
 	"GlyphStyle": "Angled-No-X",
 	"DisableNewsFeed": false,
 	"FeedURLs": "https://archlinux.org/feeds/news/",

@@ -10,7 +10,8 @@
         "sway/workspaces",
         "sway/mode",
         "sway/scratchpad",
-        "custom/media"
+        "custom/media",
+        "wlr/taskbar",
     ],
     "modules-center": [
         "clock",
@@ -218,4 +219,14 @@
         "format-disabled": "", 
         "on-click": "kitty --class float_tui -e bluetui"
     },
+    
+    "wlr/taskbar": {
+        "format": "{icon}",
+        "icon-size": 10,
+        "icon-theme": "Papirus",
+        "spacing": 5,
+        "tooltip-format": "{title}",
+        "on-click": "activate",
+        "on-click-middle": "close"
+    }
 }
