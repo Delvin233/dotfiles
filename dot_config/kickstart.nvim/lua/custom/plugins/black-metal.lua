@@ -8,7 +8,7 @@ return {
       -- optional configuration here
       transparent = false,
     }
-    -- require('black-metal').load()
-    -- vim.cmd 'colorscheme taake'
+    require('black-metal').load()
+    vim.cmd 'colorscheme taake'
   end,
 }
