@@ -1,2 +1,3 @@
 0000000000000000000000000000000000000000 aac8249f8ca50b8162432686f402d144c90d4245 delvo <delvo@cachy-delvo.(none)> 1778716351 +0000	clone: from github.com:Delvin233/kickstart.nvim.git
 aac8249f8ca50b8162432686f402d144c90d4245 d0efd70596faeab1fb9fad15a9129c190cbafd85 Delvin233 <yamoahdelvin@gmail.com> 1779899936 +0000	commit: feat: just themes and cpp, c lsp and formatter
+d0efd70596faeab1fb9fad15a9129c190cbafd85 ff7591ff7677868a7fbb1f44ed747d7cbef1b30b Delvin233 <yamoahdelvin@gmail.com> 1780867558 +0000	commit: chore: backup for final distro hop

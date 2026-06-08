@@ -39,7 +39,7 @@ for_window [class="(?i)godot"] floating enable
 # 2. Force ONLY the main editor window back into tiled mode
 for_window [class="(?i)godot" title=" - Godot Engine$"] floating disable
 
-# clipbaord configuration
+# clipboard configuration
 exec wl-paste --type text --watch cliphist store
 exec wl-paste --type image --watch cliphist store
 exec wl-paste --primary --watch cliphist store
