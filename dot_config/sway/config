@@ -89,12 +89,13 @@ output "*" bg /home/delvo/Downloads/rubberDuck.jpg fill
 #exec sway-audio-idle-inhibit
 # Example configuration:
 #
-exec swayidle -w \
-         timeout 300 'swaylock -f -c 000000' \
-         timeout 600 'swaymsg "output * dpms off"' \
-         resume 'swaymsg "output * dpms on"' \
-         timeout 900 'systemctl suspend' \
-         before-sleep 'swaylock -f -c 000000'
+# exec swayidle -w \
+         # timeout 300 'swaylock -f -c 000000' \
+         # timeout 600 'swaymsg "output * dpms off"' \
+         # resume 'swaymsg "output * dpms on"' \
+         # timeout 900 'systemctl suspend' \
+         # before-sleep 'swaylock -f -c 000000'
+exec hypridle
 
 # system lock
 bindsym $mod+Escape exec wlogout
@@ -297,8 +298,8 @@ bar {
 
 # Window gaps configuration
 gaps inner 2
-gaps outer 5
-smart_gaps off
+gaps outer 2
+smart_gaps on
 
 # Border style definition
 default_border pixel 2
