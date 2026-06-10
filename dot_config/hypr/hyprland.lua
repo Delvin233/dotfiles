@@ -20,11 +20,14 @@ hl.monitor({
 	position = "auto",
 	scale = "1",
 })
-
 ---------------------
 ---- MY PROGRAMS ----
 ---------------------
 
+hl.device({
+	name = "g2touch-multi-touch-by-g2tsp",
+	enabled = false,
+})
 -- Set programs that you use
 local terminal = "kitty"
 local fileManager = "thunar"

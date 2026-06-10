@@ -46,6 +46,9 @@ exec wl-paste --primary --watch cliphist store
 
 bindsym $mod+shift+v exec "cliphist list | rofi -dmenu -p Clipboard | cliphist decode | wl-copy"
 
+# Turn off monitor touch
+input "10900:20489:G2Touch_Multi-Touch_by_G2TSP" events disabled
+
 # Volume notification
 exec swayosd-server
 

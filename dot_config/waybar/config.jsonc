@@ -10,7 +10,6 @@
         "sway/workspaces",
         "sway/mode",
         "sway/scratchpad",
-        "custom/media",
     ],
     "modules-center": [
         "clock",
@@ -24,8 +23,6 @@
         "memory",
         "temperature",
         "battery",
-        "battery#bat2",
-        "custom/power"
     ],
     // Modules configuration
     // "sway/workspaces": {
