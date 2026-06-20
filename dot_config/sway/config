@@ -29,7 +29,7 @@ set $menu rofi -show drun
 bindsym $mod+Ctrl+n exec pkill gammastep || gammastep -O 4200
 
 # Make mpv float and center it by default
-for_window [app_id="mpv"] floating enable, move position center
+for_window [app_id="mpv"] floating enable, resize set 800 500, move position center
 
 ## the main idea is that sway runs from top to buttom, so after it does the float for everything,
 ## it then diables float in the main editor so anything else follows the rules now.
@@ -92,13 +92,13 @@ output "*" bg /home/delvo/Downloads/rubberDuck.jpg fill
 #exec sway-audio-idle-inhibit
 # Example configuration:
 #
-# exec swayidle -w \
-         # timeout 300 'swaylock -f -c 000000' \
-         # timeout 600 'swaymsg "output * dpms off"' \
-         # resume 'swaymsg "output * dpms on"' \
-         # timeout 900 'systemctl suspend' \
-         # before-sleep 'swaylock -f -c 000000'
-exec hypridle
+exec swayidle -w \
+         timeout 300 'swaylock -f -c 000000' \
+         timeout 600 'swaymsg "output * dpms off"' \
+         resume 'swaymsg "output * dpms on"' \
+         timeout 900 'systemctl suspend' \
+         before-sleep 'swaylock -f -c 000000'
+# exec hypridle
 
 # system lock
 bindsym $mod+Escape exec wlogout
@@ -317,7 +317,7 @@ client.urgent           #ff3366 #ff3366 #ffffff #ff3366   #ff3366
 
 exec lxqt-policykit-agent
 
-exec dbus-update-activation-environment --systemd WAYLAND_DISPLAY XDG_CURRENT_DESKTOP=sway
+exec /usr/lib/xdg-desktop-portal -r
 
 
 include /etc/sway/config.d/*
