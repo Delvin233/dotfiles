@@ -49,8 +49,9 @@ window#waybar {
 #tray,
 #mode,
 #idle_inhibitor,
+/* for some this funny enough controls the margin and padding */
 #mpd {
-  padding: 0 8px;
+  padding: 0 10px;
   margin: 0px 0px;
   color: #000000;
 }
@@ -58,6 +59,7 @@ window#waybar {
 #window,
 #workspaces {
   margin: 0 0px;
+  padding: 0 0px;
 }
 
 /* If workspaces is the leftmost module, omit left margin */
