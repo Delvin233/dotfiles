@@ -9,4 +9,10 @@
 
 alias ls='ls --color=auto'
 alias grep='grep --color=auto'
+
+# i used this for emacs, since emacs goes with bash not fish.
+# you can add more to this with if statements to check if in emacs or not.
+# if not in emacs, you can use "emacsclient -c -a"
+export EDITOR="emacsclient"
+export VISUAL="emacsclient"
 PS1='[\u@\h \W]\$ '
