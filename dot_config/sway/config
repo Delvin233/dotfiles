@@ -316,6 +316,8 @@ client.unfocused        #112936 #112936 #888888 #112936   #112936
 client.urgent           #ff3366 #ff3366 #ffffff #ff3366   #ff3366
 
 exec lxqt-policykit-agent
+exec systemctl --user start spotifyd # start spotifyd using systemd
+exec systemctl --user enable --now spotifyd # start spotifyd and enable starting on login
 
 exec /usr/lib/xdg-desktop-portal -r
 
