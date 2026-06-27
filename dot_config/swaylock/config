@@ -5,7 +5,7 @@ clock
 timestr=%R
 #datestr=%a, %e of %B
 
-image=/home/delvo/Downloads/unohana3.jpg
+image=/home/delvo/Downloads/unohana.jpg
 
 fade-in=0.2
 

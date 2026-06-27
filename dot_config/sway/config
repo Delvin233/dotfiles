@@ -8,10 +8,13 @@
 #
 
 # system wide opacity
-for_window [title="."] opacity 0.95
+for_window [title="."] opacity 1.0
 
 # sway font size
 font pango:monospace 8
+
+# icons set
+seat seat0 xcursor_theme Oxygen_Yellow 24
 
 # Logo key. Use Mod1 for Alt.
 set $mod Mod4
@@ -79,7 +82,7 @@ bindsym $mod+Control+a exec kitty --class "float_tui" -e ncpamixer
 ### Output configuration
 #
 # Default wallpaper (more resolutions are available in /usr/share/backgrounds/sway/)
-output "*" bg /home/delvo/Downloads/rubberDuck.jpg fill
+output "*" bg /home/delvo/Downloads/minazuki.jpg fill
 #
 # Example configuration:
 #
@@ -290,13 +293,13 @@ bar {
 
     # When the status_command prints a new line to stdout, swaybar updates.
     # The default just shows the current date and time.
-    status_command while date +'%Y-%m-%d %X'; do sleep 1; done
+   # status_command while date +'%Y-%m-%d %X'; do sleep 1; done
 
-    colors {
-        statusline #ffffff
-        background #323232
-        inactive_workspace #32323200 #32323200 #5c5c5c
-    }
+   # colors {
+       # statusline #ffffff
+        #background #323232
+        #inactive_workspace #32323200 #32323200 #5c5c5c
+   # }
 }
 
 # Window gaps configuration

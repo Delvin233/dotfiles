@@ -197,7 +197,7 @@
             "default": "🎜",
         },
         "escape": true,
-        "on-click": "spotify",
+        "on-click": "spotify-launcher",
         "exec": "$HOME/.config/waybar/twa_me_lala.sh 2> /dev/null" // Script in resources folder
         // "exec": "$HOME/.config/waybar/mediaplayer.py --player spotify 2> /dev/null" // Filter player based on name
     },
