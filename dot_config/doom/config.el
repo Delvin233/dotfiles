@@ -84,6 +84,3 @@
 ;;; :lang-gdscript
 ;;; I created a symlink after installing gdscript-formatter
 ;;; sudo ln -s /usr/bin/gdscript-formatter /usr/bin/gdformat
-(after! apheleia
-  (setf (alist-get 'gdformat apheleia-formatters)
-        '("gdscript-formatter")))
