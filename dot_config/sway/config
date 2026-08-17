@@ -11,10 +11,10 @@
 for_window [title="."] opacity 1.0
 
 # sway font size
-font pango:monospace 8
+font pango:monospace 12
 
 # icons set
-seat seat0 xcursor_theme Oxygen_Yellow 24
+seat seat0 xcursor_theme Oxygen_Yellow 55
 
 # Logo key. Use Mod1 for Alt.
 set $mod Mod4
@@ -49,9 +49,6 @@ exec wl-paste --primary --watch cliphist store
 
 bindsym $mod+shift+v exec "cliphist list | rofi -dmenu -p Clipboard | cliphist decode | wl-copy"
 
-# Turn off monitor touch
-input "10900:20489:G2Touch_Multi-Touch_by_G2TSP" events disabled
-
 # Volume notification
 exec swayosd-server
 
@@ -74,7 +71,7 @@ bindsym $mod+Control+w exec kitty --class "float_tui" -e impala
 bindsym $mod+Control+b exec kitty --class "float_tui" -e bluetui
 
 # Force ANY window with the class "float_tui" to be floating and centered
-for_window [app_id="float_tui"] floating enable, resize set 800 500, move position center
+for_window [app_id="float_tui"] floating enable, resize set 900 600, move position center
 
 # Using ncpamixer for volume
 bindsym $mod+Control+a exec kitty --class "float_tui" -e ncpamixer
@@ -82,7 +79,7 @@ bindsym $mod+Control+a exec kitty --class "float_tui" -e ncpamixer
 ### Output configuration
 #
 # Default wallpaper (more resolutions are available in /usr/share/backgrounds/sway/)
-output "*" bg /home/delvo/Downloads/animeSnipe.png fill
+output "*" bg /home/delvo/Downloads/mayuri-girl.jpg fill
 #
 # Example configuration:
 #
@@ -281,25 +278,25 @@ bindsym $mod+r mode "resize"
     # bindsym --locked XF86MonBrightnessUp exec brightnessctl set 5%+
     # Special key to take a screenshot with grim
     # Select area, save to folder, and copy to clipboard
-bindsym Print exec 'grim -g "$(slurp)" "$HOME/Pictures/Screenshots/Screenshot_$(date +%Y-%m-%d_%H-%m-%S).png" && wl-copy < "$HOME/Pictures/Screenshots/$(ls -t ~/Pictures/Screenshots | head -n1)" && notify-send "Screenshot Saved & Copied" -t 2000'
+bindsym $mod+shift+p exec 'grim -g "$(slurp)" "$HOME/Pictures/Screenshots/Screenshot_$(date +%Y-%m-%d_%H-%m-%S).png" && wl-copy < "$HOME/Pictures/Screenshots/$(ls -t ~/Pictures/Screenshots | head -n1)" && notify-send "Screenshot Saved & Copied" -t 2000'
 
 #
 # Status Bar
 #
 # Read `man 5 sway-bar` for more information about this section.
 bar {
-    swaybar_command waybar
+   # swaybar_command waybar
     position top
 
     # When the status_command prints a new line to stdout, swaybar updates.
     # The default just shows the current date and time.
-   # status_command while date +'%Y-%m-%d %X'; do sleep 1; done
+    status_command while date +'%Y-%m-%d %X'; do sleep 1; done
 
-   # colors {
+    colors {
        # statusline #ffffff
         #background #323232
         #inactive_workspace #32323200 #32323200 #5c5c5c
-   # }
+    }
 }
 
 # Window gaps configuration
@@ -311,19 +308,7 @@ smart_gaps on
 default_border pixel 2
 default_floating_border pixel 2
 
-# Vibrant Teal Neon palette
-# class                 border  backgr. text    indicator child_border
-client.focused          #26cedb #1d4559 #ffffff #26cedb   #26cedb
-client.focused_inactive #1d4559 #112936 #aaaaaa #1d4559   #1d4559
-client.unfocused        #112936 #112936 #888888 #112936   #112936
-client.urgent           #ff3366 #ff3366 #ffffff #ff3366   #ff3366
-
 exec lxqt-policykit-agent
-
-# so i havent set it up as a systemd service.... so i want a way to just run it like that....
-# as to why it isnt a systemd service from installation is weird
-#exec systemctl --user start spotifyd # start spotifyd using systemd
-exec systemctl --user enable --now spotifyd 
 
 exec /usr/lib/xdg-desktop-portal -r
 
