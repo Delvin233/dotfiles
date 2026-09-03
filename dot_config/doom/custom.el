@@ -48,7 +48,8 @@
      "720838034f1dd3b3da66f6bd4d053ee67c93a747b219d1c546c41c4e425daf93"
      "4594d6b9753691142f02e67b8eb0fda7d12f6cc9f1299a49b819312d6addad1d"
      "13096a9a6e75c7330c1bc500f30a8f4407bd618431c94aeab55c9855731a95e1" default))
- '(package-selected-packages '(base16-theme melpa-upstream-visit night-owl-theme)))
+ '(package-selected-packages
+   '(base16-theme clang-format melpa-upstream-visit night-owl-theme yaml-mode)))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.

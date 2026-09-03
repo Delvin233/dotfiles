@@ -84,3 +84,6 @@
 ;;; :lang-gdscript
 ;;; I created a symlink after installing gdscript-formatter
 ;;; sudo ln -s /usr/bin/gdscript-formatter /usr/bin/gdformat
+;;;
+(setq-hook! 'c++-mode-hook
+   +format-with-lsp nil)

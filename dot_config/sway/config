@@ -42,6 +42,9 @@ for_window [class="(?i)godot"] floating enable
 # 2. Force ONLY the main editor window back into tiled mode
 for_window [class="(?i)godot" title=" - Godot Engine$"] floating disable
 
+# making windows in steam to float
+#for_window [class="(?i)steam"] floating enable
+
 # clipboard configuration
 exec wl-paste --type text --watch cliphist store
 exec wl-paste --type image --watch cliphist store
@@ -92,12 +95,12 @@ output "*" bg /home/delvo/Downloads/mayuri-girl.jpg fill
 #exec sway-audio-idle-inhibit
 # Example configuration:
 #
-exec swayidle -w \
-         timeout 300 'swaylock -f -c 000000' \
-         timeout 600 'swaymsg "output * dpms off"' \
-         resume 'swaymsg "output * dpms on"' \
-         timeout 900 'systemctl suspend' \
-         before-sleep 'swaylock -f -c 000000'
+# exec swayidle -w \
+#          timeout 300 'swaylock -f -c 000000' \
+#          timeout 600 'swaymsg "output * dpms off"' \
+#          resume 'swaymsg "output * dpms on"' \
+#          timeout 900 'systemctl suspend' \
+#          before-sleep 'swaylock -f -c 000000'
 # exec hypridle
 
 # system lock
