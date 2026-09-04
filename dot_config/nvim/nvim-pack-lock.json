@@ -18,6 +18,10 @@
       "rev": "016802de402556da54c36bd7359b441266b01cdd",
       "src": "https://github.com/stevearc/conform.nvim"
     },
+    "darkvoid.nvim": {
+      "rev": "45be993a5617e05811b6b293c05e6aded7003cc9",
+      "src": "https://github.com/darkvoid-theme/darkvoid.nvim"
+    },
     "fidget.nvim": {
       "rev": "6f793b2bcd2d35e201c09520f698bb763220908a",
       "src": "https://github.com/j-hui/fidget.nvim"
@@ -65,6 +69,10 @@
     "mini.nvim": {
       "rev": "9d01f392b33fb2ba36fbc87fc0bf4453e63ffb0a",
       "src": "https://github.com/nvim-mini/mini.nvim"
+    },
+    "modus-themes.nvim": {
+      "rev": "56233f0986ef6c8d0eab97e924e87144e584d970",
+      "src": "https://github.com/miikanissi/modus-themes.nvim"
     },
     "neo-tree.nvim": {
       "rev": "83e7a2982fd12b9c3d35bc39dd5877cd91a02a61",
@@ -119,6 +127,10 @@
     "plenary.nvim": {
       "rev": "74b06c6c75e4eeb3108ec01852001636d85a932b",
       "src": "https://github.com/nvim-lua/plenary.nvim"
+    },
+    "silentium.nvim": {
+      "rev": "058b178e7bc793d2083d1f3e248119bf88c1fe3e",
+      "src": "https://github.com/silentium-theme/silentium.nvim"
     },
     "telescope-fzf-native.nvim": {
       "rev": "b25b749b9db64d375d782094e2b9dce53ad53a40",

@@ -255,6 +255,8 @@ do
   -- Command-line mode
   vim.keymap.set('c', '<C-H>', '<C-W>', { noremap = true, silent = true })
 
+  -- colorscheme switcher
+  vim.keymap.set('n', '<leader>tc', '<cmd>Telescope colorscheme<CR>')
   -- [[ Basic Autocommands ]]
   --  See `:help lua-guide-autocommands`
 
