@@ -155,7 +155,7 @@ do
   --  It is very similar to `vim.o` but offers an interface for conveniently interacting with tables.
   --   See `:help lua-options`
   --   and `:help lua-guide-options`
-  vim.o.list = true
+  vim.o.list = false
   vim.opt.listchars = { tab = '» ', trail = '·', nbsp = '␣' }
 
   -- Preview substitutions live, as you type!
@@ -257,6 +257,15 @@ do
 
   -- colorscheme switcher
   vim.keymap.set('n', '<leader>tc', '<cmd>Telescope colorscheme<CR>')
+
+  -- terminal
+  vim.keymap.set('n', '<leader>ot', '<cmd>terminal<CR>')
+
+  -- vsplit
+  vim.keymap.set('n', '<leader>vs', '<cmd>vsplit<CR>')
+
+  -- hsplit
+  vim.keymap.set('n', '<leader>hs', '<cmd>split<CR>')
   -- [[ Basic Autocommands ]]
   --  See `:help lua-guide-autocommands`
 
@@ -399,19 +408,19 @@ do
   -- change the command under that to load whatever the name of that colorscheme is.
   --
   -- If you want to see what colorschemes are already installed, you can use `:Telescope colorscheme`.
-  -- vim.pack.add { gh 'folke/tokyonight.nvim' }
-  -- ---@diagnostic disable-next-line: missing-fields
-  -- require('tokyonight').setup {
-  --   styles = {
-  --     comments = { italic = false }, -- Disable italics in comments
-  --   },
-  -- }
+  vim.pack.add { gh 'folke/tokyonight.nvim' }
+  ---@diagnostic disable-next-line: missing-fields
+  require('tokyonight').setup {
+    styles = {
+      comments = { italic = false }, -- Disable italics in comments
+    },
+  }
   --
 
   -- Load the colorscheme here.
   -- Like many other themes, this one has different styles, and you could load
   -- any other, such as 'tokyonight-storm', 'tokyonight-moon', or 'tokyonight-day'.
-  -- vim.cmd.colorscheme 'tokyonight-night'
+  -- vim.cmd.colorscheme 'tokyonight-storm'
 
   -- Highlight todo, notes, etc in comments
   vim.pack.add { gh 'folke/todo-comments.nvim' }
@@ -444,7 +453,7 @@ do
     n_lines = 500,
   }
   require('mini.files').setup()
-  vim.keymap.set('n', '<leader>.', '<cmd>lua MiniFiles.open()<CR>')
+  vim.keymap.set('n', '<leader>.', '<cmd>Ex<CR>')
 
   -- Add/delete/replace surroundings (brackets, quotes, etc.)
   --

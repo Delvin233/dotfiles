@@ -34,6 +34,14 @@
       "rev": "5be654f2232c10ddcad19c1607a67b6b4b78fc29",
       "src": "https://github.com/lewis6991/gitsigns.nvim"
     },
+    "godot.nvim": {
+      "rev": "a383c920e2b3ad00db7435835ca58798d642785a",
+      "src": "https://github.com/Lommix/godot.nvim"
+    },
+    "godotdev.nvim": {
+      "rev": "ccac07c5b18ccbe0c3f90d06129cd17f08e4ac04",
+      "src": "https://github.com/Mathijs-Bakker/godotdev.nvim"
+    },
     "guess-indent.nvim": {
       "rev": "84a4987ff36798c2fc1169cbaff67960aed9776f",
       "src": "https://github.com/NMAC427/guess-indent.nvim"
@@ -62,6 +70,10 @@
       "rev": "2a6940af80375532e5e9e7c1f2fc6319a1b7a69d",
       "src": "https://github.com/mason-org/mason.nvim"
     },
+    "mini.base16": {
+      "rev": "e1bb1cb70aa33dc7038cd79bb597325e51597fa1",
+      "src": "https://github.com/nvim-mini/mini.base16"
+    },
     "mini.files": {
       "rev": "a249438d15fa6f64085ba83a9d1794d726aaf5ad",
       "src": "https://github.com/nvim-mini/mini.files"
@@ -78,6 +90,10 @@
       "rev": "83e7a2982fd12b9c3d35bc39dd5877cd91a02a61",
       "src": "https://github.com/nvim-neo-tree/neo-tree.nvim",
       "version": ">=0.0.0"
+    },
+    "neogit": {
+      "rev": "5adc81b26232954cd7a90f158aa7844c18fc3165",
+      "src": "https://github.com/neogitorg/neogit"
     },
     "no-clown-fiesta.nvim": {
       "rev": "04b808e9769ded988089772ffcaf08d92d75d927",

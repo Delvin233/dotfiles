@@ -54,3 +54,4 @@
 ;; (unpin! t)
 ;; In ~/.doom.d/packages.el
 (package! base16-theme)
+(package! ef-themes)

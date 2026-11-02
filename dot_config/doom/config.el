@@ -21,8 +21,8 @@
 ;; See 'C-h v doom-font' for documentation and more examples of what they
 ;; accept. For example:
 ;;
-(setq doom-font (font-spec :family "JetBrainsMono Nerd Font" :size 15 :weight 'normal)
-      doom-variable-pitch-font (font-spec :family "JetBrainsMono Nerd Font" :size 15 :weight 'normal))
+(setq doom-font (font-spec :family "JetBrainsMono Nerd Font" :size 17 :weight 'normal)
+      doom-variable-pitch-font (font-spec :family "JetBrainsMono Nerd Font" :size 17 :weight 'normal))
 ;;
 ;; If you or Emacs can't find your font, use 'M-x describe-font' to look them
 ;; up, `M-x eval-region' to execute elisp code, and 'M-x doom/reload-font' to
@@ -32,6 +32,7 @@
 ;; There are two ways to load a theme. Both assume the theme is installed and
 ;; available. You can either set `doom-theme' or manually load a theme with the
 ;; `load-theme' function. This is the default:
+;; (setq doom-theme 'doom-homage-black)
 (setq doom-theme 'doom-homage-black)
 
 ;; fixing fish issue
@@ -86,4 +87,13 @@
 ;;; sudo ln -s /usr/bin/gdscript-formatter /usr/bin/gdformat
 ;;;
 (setq-hook! 'c++-mode-hook
-   +format-with-lsp nil)
+  +format-with-lsp nil)
+
+(after! hl-todo
+  (setq! hl-todo-keyword-faces
+         '(("TODO"   . "#FF0000")
+           ("FIXME"  . "#DC752F")
+           ("WARN"   . "#DC752F")
+           ("HACK"   . "#B1951D")
+           ("REVIEW" . "#4F97D7")
+           ("NOTE"   . "#00FF00"))))

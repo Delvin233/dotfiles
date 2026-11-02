@@ -74,7 +74,7 @@ bindsym $mod+Control+w exec kitty --class "float_tui" -e impala
 bindsym $mod+Control+b exec kitty --class "float_tui" -e bluetui
 
 # Force ANY window with the class "float_tui" to be floating and centered
-for_window [app_id="float_tui"] floating enable, resize set 900 600, move position center
+for_window [app_id="float_tui"] floating enable, resize set 1200 600, move position center
 
 # Using ncpamixer for volume
 bindsym $mod+Control+a exec kitty --class "float_tui" -e ncpamixer
