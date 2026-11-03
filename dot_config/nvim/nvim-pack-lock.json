@@ -74,6 +74,10 @@
       "rev": "e1bb1cb70aa33dc7038cd79bb597325e51597fa1",
       "src": "https://github.com/nvim-mini/mini.base16"
     },
+    "mini.bufremove": {
+      "rev": "6e9c563cb71a8e4d57c4fb4089eb90a3bf3e8851",
+      "src": "https://github.com/nvim-mini/mini.bufremove"
+    },
     "mini.files": {
       "rev": "a249438d15fa6f64085ba83a9d1794d726aaf5ad",
       "src": "https://github.com/nvim-mini/mini.files"
